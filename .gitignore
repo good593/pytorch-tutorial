@@ -1,0 +1,8 @@
+# 가상환경
+.venv
+# vscode 설정파일
+.vscode
+# cashe
+__pycache__
+# data
+data
