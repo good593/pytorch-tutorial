@@ -6,3 +6,6 @@
 __pycache__
 # data
 data
+# 모델
+*.pth
+*.onnx
