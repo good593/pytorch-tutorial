@@ -4,6 +4,8 @@
 .vscode
 # cashe
 __pycache__
+# checkpoints
+.ipynb_checkpoints
 # data
 data
 # 모델
