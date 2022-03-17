@@ -9,3 +9,5 @@ data
 # 모델
 *.pth
 *.onnx
+# macbook
+.DS_Store
