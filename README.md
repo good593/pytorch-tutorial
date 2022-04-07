@@ -7,3 +7,4 @@
 - SqueezeNet
 - Transfer Learning
 - VGG
+- GAN
