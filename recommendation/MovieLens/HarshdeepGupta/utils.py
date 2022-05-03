@@ -32,7 +32,6 @@ def train_one_epoch(model, data_loader, loss_fn, optimizer, epoch_no, device, ve
         # get the actual targets
         rating = feed_dict['rating']
         
-      
         # convert to float and change dim from [batch_size] to [batch_size,1]
         rating = rating.float().view(prediction.size())  
         loss = loss_fn(prediction, rating)
