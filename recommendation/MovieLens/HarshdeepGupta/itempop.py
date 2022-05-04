@@ -50,8 +50,7 @@ class ItemPop():
     return self.__alias__
 
 
-def main():
-  args = parse_args()
+def main(args):
   path = args.path
   dataset = args.dataset
   num_negatives_test = args.num_neg_test
@@ -72,5 +71,5 @@ def main():
   test(model, full_dataset, topK)
 
 # if __name__ == "__main__":
-#     main()
+#     main(parse_args())
 

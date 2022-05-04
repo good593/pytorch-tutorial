@@ -110,9 +110,9 @@ class MLP(nn.Module):
       return self.__alias__
 
 
-def main():
+def main(args):
 
-  args = parse_args()
+  # args = parse_args()
   path = args.path
   dataset = args.dataset
   layers = eval(args.layers)
@@ -197,6 +197,6 @@ def main():
 
 # if __name__ == "__main__":
 #     print("Device available: {}".format(device))
-#     main()
+#     main(parse_args())
 
 
