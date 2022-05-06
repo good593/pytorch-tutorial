@@ -1,5 +1,6 @@
 # [손실 함수](https://velog.io/@danceintherain/%ED%9A%8C%EA%B7%80-%ED%8F%89%EA%B0%80-%EC%A7%80%ED%91%9C)
->  loss는 손실함수를 의미합니다. 모델을 훈련시킬때 이 손실 함수를 최소로 만들어주는 가중치들을 찾는 것을 목표로 삼습니다. 위 예에서는 손실함수로 MSE(mean squared error)를 사용했습니다. 손실함수로 MSE만 사용할 수 있는 것이 아니고, MAE(mean absolute error), hinge, categorical crossentropy, sparse categorical crossentropy, binary crossentropy 등도 사용할 수 있습니다. 자신이 훈련시키는 모델에 적합한 손실함수를 선택해주면 됩니다. 예를 들어, 10개의 클래스를 분류할 수 있는 분류기를 훈련시키는 경우에는 손실함수로 sparse categorical crossentropy를 사용할 수 있습니다.
+- loss: 손실함수. 훈련셋과 연관. 훈련에 사용  
+>  loss는 손실함수를 의미합니다. 모델을 훈련시킬때 이 손실 함수를 최소로 만들어주는 가중치들을 찾는 것을 목표로 삼습니다. 손실함수로 MSE만 사용할 수 있는 것이 아니고, MAE(mean absolute error), hinge, categorical crossentropy, sparse categorical crossentropy, binary crossentropy 등도 사용할 수 있습니다. 자신이 훈련시키는 모델에 적합한 손실함수를 선택해주면 됩니다. 예를 들어, 10개의 클래스를 분류할 수 있는 분류기를 훈련시키는 경우에는 손실함수로 sparse categorical crossentropy를 사용할 수 있습니다.
 
 ## 1. RSS - 단순 오차
 - 실제 값과 예측 값의 단순 오차 제곱합: Loss와 거의 비슷한 형태
