@@ -51,9 +51,9 @@ class ItemPop():
 
 
 def main(args):
-  path = args.path
-  dataset = args.dataset
-  num_negatives_test = args.num_neg_test
+  path = args.path # Data/
+  dataset = args.dataset  # movielens
+  num_negatives_test = args.num_neg_test   # 100
   print("Model arguments: %s " %(args))
 
   topK = 10

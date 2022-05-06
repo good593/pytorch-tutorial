@@ -43,14 +43,18 @@ def main():
 
   transactions = pd.read_csv(PATH_INFO.input_u_data.value[1], sep="\t", names = PATH_INFO.input_u_data.value[2], engine = 'python')
   # print(transactions.head())
+  print(f'transactions.shape: {transactions.shape}')
+  print(f'transactions[userID].nunique(): {transactions["userID"].nunique()}')
 
   # convert to implicit scenario
   transactions['rating'] = 1
   
   # make the dataset
   train_df, test_df = __get_train_test_df(transactions)
-  save_to_csv(train_df, PATH_INFO.output_train.value[1], header = False,index = False, verbose = 1)
-  save_to_csv(test_df, PATH_INFO.output_test.value[1],header = False,index = False, verbose = 1)
+  print(f'train_df.shape: {train_df.shape}')
+  save_to_csv(train_df, PATH_INFO.output_train.value[1], header = False,index = False, verbose = True)
+  print(f'test_df.shape: {test_df.shape}')
+  save_to_csv(test_df, PATH_INFO.output_test.value[1],header = False,index = False, verbose = True)
   __report_stats(transactions, train_df, test_df)
 
 
